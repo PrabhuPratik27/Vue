@@ -12,9 +12,12 @@ new Vue({
         sub: function (limit) {
             this.age -= limit;
         },
-        updatexy : function(e){
+        updatexy: function (e) {
             this.X = e.offsetX;
-            this.Y = e.offsetY;   
+            this.Y = e.offsetY;
+        },
+        click: function () {
+            alert("Ye dekh kaisa chutiya banaya");
         }
     }
 });
