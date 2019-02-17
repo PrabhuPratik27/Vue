@@ -16,17 +16,16 @@
 <body>
 
     <div id="vue-app">
-        <h1>Dynamic CSS</h1>
-        <h2>Example1</h2>
-        <div @click ="available = !available" :class="{available : available}">
-            <span>Yo</span>
-        </div>
-        <h2>Example2</h2>
-        <button @click ="nearby = !nearby">Toggle Nearby</button>
-        <button @click="available = !available">Toggle Available</button>
-        <div :class="compClasses">
-            <span>Yooooooo</span>
-        </div>
+        <h1>Conditionals</h1>
+        <button @click = "error=!error">Toggle Error</button>
+        <button @click = "success=!success">Toggle Successs</button>
+        <!--Removes the element Completely from the DOM-->
+        <p v-if="error">There has been an error</p>
+        <p v-else-if="success">Wow success</p>
+        <!-- Doesn't take element out of DOM but adds a display none css property-->
+        <p v-show="error">There has been an error</p>
+        <p v-show="success">Wow success</p>
+
     </div>
 
     <script src="app.js"></script>
