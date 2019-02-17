@@ -1,22 +1,31 @@
-new Vue({
-    el: "#vue-app",
+const one = new Vue({
+    el: "#vue-app1",
     data: {
-        health: 100,
-        ended: false
+        title: "Vue app 1"
     },
     methods: {
-        punch: function () {
-            this.health -= 10;
-            if (this.health <= 0) {
-                this.ended = true;
-            }
-        },
-        restart: function () {
-            this.health = 100;
-            this.ended = false;
+
+    },
+    computed: {
+        greet: function () {
+            return "Hello from app 1";
+        }
+    }
+});
+
+const two = new Vue({
+    el: "#vue-app2",
+    data: {
+        title: "Vue app 2"
+    },
+    methods: {
+        change: function () {
+            one.title = "Title of Vue app 1 changed"
         }
     },
     computed: {
-
+        greet: function () {
+            return "Hello from app 2";
+        }
     }
 });
