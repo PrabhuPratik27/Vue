@@ -1,3 +1,17 @@
+Vue.component('greeting', {
+    template: '<p>hey there,I am a{{name}} <button @click="changeName">Change Name</button></p>',
+    data: function () {
+        return {
+            name: 'Yoshi'
+        }
+    },
+    methods:{
+        changeName: function(){
+            this.name = "Mario";
+        }
+    }
+})
+
 const one = new Vue({
     el: "#vue-app1",
     data: {
@@ -7,9 +21,7 @@ const one = new Vue({
 
     },
     computed: {
-        greet: function () {
-            return "Hello from app 1";
-        }
+
     }
 });
 
@@ -19,13 +31,9 @@ const two = new Vue({
         title: "Vue app 2"
     },
     methods: {
-        change: function () {
-            one.title = "Title of Vue app 1 changed"
-        }
+
     },
     computed: {
-        greet: function () {
-            return "Hello from app 2";
-        }
+
     }
 });
