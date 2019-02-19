@@ -14,19 +14,15 @@
 </head>
 
 <body>
-    <h1>Multiple Instances</h1>
 
     <div id="vue-app1">
 
-        <h2>{{title}}</h2>
-        <greeting></greeting>
+        <h1>Refs</h1>
 
-    </div>
-
-    <div id="vue-app2">
-
-        <h2>{{title}}</h2>
-        <greeting></greeting> 
+        <input type="text" ref="in">
+        <button @click="readRefs">Submit</button>
+        <p>Your fav food: {{output}}</p>
+        <div ref="test">Hello</div>
 
     </div>
 
