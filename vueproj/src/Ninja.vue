@@ -1,7 +1,8 @@
 <template>
   <div>
+    <h1>List of Ninjas</h1>
     <ul>
-        <li v-for="ninja in ninjas" :key="ninja">{{ninja}}</li>
+      <li v-for="ninja in ninjas" :key="ninja">{{ninja}}</li>
     </ul>
   </div>
 </template>
@@ -10,9 +11,17 @@
 export default {
   data() {
     return {
-      ninjas: ["Yoshi","Mario","Ryu"]
+      ninjas: ["Yoshi", "Mario", "Ryu"]
     };
   },
   methods: {}
 };
 </script>
+
+<style lang="scss" scoped>
+    h1{
+        color: green;
+    }
+</style>
+
+
