@@ -1,0 +1,22 @@
+{
+  "name": "firstvueapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrabhuPratik27/Vue.git"
+  },
+  "author": "Pratik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrabhuPratik27/Vue/issues"
+  },
+  "homepage": "https://github.com/PrabhuPratik27/Vue#readme",
+  "dependencies": {
+    "vue-cli": "^2.9.6"
+  }
+}
